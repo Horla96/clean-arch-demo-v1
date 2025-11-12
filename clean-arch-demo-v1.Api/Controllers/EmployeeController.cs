@@ -1,11 +1,50 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using clean_arch_demo_v1.Application.Commands;
+using clean_arch_demo_v1.Application.Queries;
+using clean_arch_demo_v1.Core.Entities;
+using MediatR;
+using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace clean_arch_demo_v1.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeeController : ControllerBase
+    public class EmployeeController(ISender sender) : ControllerBase
     {
+        [HttpPost("")]
+        public async Task<IActionResult> AddEmployeeAsync([FromBody] EmployeeEntity employee)
+        {
+            var result = await sender.Send(new AddEmployeeCommand(employee));
+            return Ok(result);
+        }
+
+        [HttpGet("")]
+        public async Task<IActionResult> GetAllEmployeesAsync()
+        {
+            var result = await sender.Send(new GetAllEmployeesQuery());
+            return Ok(result);
+        }
+
+        [HttpGet("{employeeId}")]
+        public async Task<IActionResult> GetEmployeeByIdAsync([FromRoute] Guid employeeId)
+        {
+            var result = await sender.Send(new GetEmployeeByIdQuery(employeeId));
+            return Ok(result);
+        }
+
+        [HttpPut("{employeeId}")]
+        public async Task<IActionResult> UpdateEmployeeAsync([FromRoute] Guid employeeId, [FromBody] EmployeeEntity employee)
+        {
+            var result = await sender.Send(new UpdateEmployeeCommand(employeeId, employee));
+            return Ok(result);
+        }
+
+        [HttpDelete("{employeeId}")]
+        public async Task<IActionResult> DeleteEmployeeAsync([FromRoute] Guid employeeId)
+        {
+            var result = await sender.Send(new DeleteEmployeeCommand(employeeId));
+            return Ok(result);
+        }
     }
 }

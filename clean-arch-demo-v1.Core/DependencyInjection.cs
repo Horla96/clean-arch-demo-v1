@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using clean_arch_demo_v1.Core.Options;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +11,11 @@ namespace clean_arch_demo_v1.Core
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddCoreDI(this IServiceCollection services)
+        public static IServiceCollection AddCoreDI(this IServiceCollection services, IConfiguration configuration)
         {
+
+            services.Configure<ConnectionStringOptions>(configuration.GetSection(ConnectionStringOptions.SectionName));
+
             return services;
         }
     }

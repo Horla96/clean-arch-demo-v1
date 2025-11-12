@@ -9,8 +9,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//builder.Services.Configure<ConnectionStringOptions>(builder.Configuration.GetSection(ConnectionStringOptions.SectionName));
 
-builder.Services.AddApiDI();
+
+builder.Services.AddApiDI(builder.Configuration);
 
 var app = builder.Build();
 

@@ -1,8 +1,10 @@
 ﻿using clean_arch_demo_v1.Core.Interfaces;
+using clean_arch_demo_v1.Core.Options;
 using clean_arch_demo_v1.Infrastructure.Data;
 using clean_arch_demo_v1.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +17,9 @@ namespace clean_arch_demo_v1.Infrastructure
     {
         public static IServiceCollection AddInfrastructureDI(this IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(options =>
+            services.AddDbContext<AppDbContext>((provider, options) =>
             {
-                options.UseSqlServer("Server=LBA-SULAIMAN;Database=EmployeeDb;Trusted_Connection=True;TrustServerCertificate=True");
+                options.UseSqlServer(provider.GetRequiredService<IOptionsSnapshot<ConnectionStringOptions>>().Value.DefaultConnection);
             });
 
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
