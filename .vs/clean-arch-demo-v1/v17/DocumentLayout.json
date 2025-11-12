@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{873AE83A-27FE-4854-AA9B-C284FAB80FC5}|clean-arch-demo-v1.Api\\clean-arch-demo-v1.Api.csproj|c:\\users\\hp\\desktop\\datalinks internship program\\software development\\backend\\dotnet-c#\\clean-arch-demo-v1\\clean-arch-demo-v1.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873AE83A-27FE-4854-AA9B-C284FAB80FC5}|clean-arch-demo-v1.Api\\clean-arch-demo-v1.Api.csproj|solutionrelative:clean-arch-demo-v1.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873AE83A-27FE-4854-AA9B-C284FAB80FC5}|clean-arch-demo-v1.Api\\clean-arch-demo-v1.Api.csproj|c:\\users\\hp\\desktop\\datalinks internship program\\software development\\backend\\dotnet-c#\\clean-arch-demo-v1\\clean-arch-demo-v1.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873AE83A-27FE-4854-AA9B-C284FAB80FC5}|clean-arch-demo-v1.Api\\clean-arch-demo-v1.Api.csproj|solutionrelative:clean-arch-demo-v1.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3D560C-1658-467E-9BD9-0650FC3FF710}|clean-arch-demo-v1.Infrastructure\\clean-arch-demo-v1.Infrastructure.csproj|c:\\users\\hp\\desktop\\datalinks internship program\\software development\\backend\\dotnet-c#\\clean-arch-demo-v1\\clean-arch-demo-v1.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3D560C-1658-467E-9BD9-0650FC3FF710}|clean-arch-demo-v1.Infrastructure\\clean-arch-demo-v1.Infrastructure.csproj|solutionrelative:clean-arch-demo-v1.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C218A45A-E97D-467A-911E-651EAEBB1527}|clean-arch-demo-v1.Core\\clean-arch-demo-v1.Core.csproj|c:\\users\\hp\\desktop\\datalinks internship program\\software development\\backend\\dotnet-c#\\clean-arch-demo-v1\\clean-arch-demo-v1.core\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C218A45A-E97D-467A-911E-651EAEBB1527}|clean-arch-demo-v1.Core\\clean-arch-demo-v1.Core.csproj|solutionrelative:clean-arch-demo-v1.core\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AB403F-6D63-4D5C-A8D0-C82E31F1F03D}|clean-arch-demo-v1.Application\\clean-arch-demo-v1.Application.csproj|c:\\users\\hp\\desktop\\datalinks internship program\\software development\\backend\\dotnet-c#\\clean-arch-demo-v1\\clean-arch-demo-v1.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AB403F-6D63-4D5C-A8D0-C82E31F1F03D}|clean-arch-demo-v1.Application\\clean-arch-demo-v1.Application.csproj|solutionrelative:clean-arch-demo-v1.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C218A45A-E97D-467A-911E-651EAEBB1527}|clean-arch-demo-v1.Core\\clean-arch-demo-v1.Core.csproj|c:\\users\\hp\\desktop\\datalinks internship program\\software development\\backend\\dotnet-c#\\clean-arch-demo-v1\\clean-arch-demo-v1.core\\clean-arch-demo-v1.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C218A45A-E97D-467A-911E-651EAEBB1527}|clean-arch-demo-v1.Core\\clean-arch-demo-v1.Core.csproj|solutionrelative:clean-arch-demo-v1.core\\clean-arch-demo-v1.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +55,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Api\\Program.cs",
+              "RelativeDocumentMoniker": "clean-arch-demo-v1.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Api\\Program.cs",
+              "RelativeToolTip": "clean-arch-demo-v1.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:16:30.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Api\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "clean-arch-demo-v1.Api\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Api\\DependencyInjection.cs",
+              "RelativeToolTip": "clean-arch-demo-v1.Api\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:15:45.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Core\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "clean-arch-demo-v1.Core\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Core\\DependencyInjection.cs",
+              "RelativeToolTip": "clean-arch-demo-v1.Core\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:09:42.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "clean-arch-demo-v1.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "clean-arch-demo-v1.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:09:28.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "clean-arch-demo-v1.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "clean-arch-demo-v1.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:09:13.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "clean-arch-demo-v1.Core",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Core\\clean-arch-demo-v1.Core.csproj",
+              "RelativeDocumentMoniker": "clean-arch-demo-v1.Core\\clean-arch-demo-v1.Core.csproj",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Core\\clean-arch-demo-v1.Core.csproj",
+              "RelativeToolTip": "clean-arch-demo-v1.Core\\clean-arch-demo-v1.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-12T11:07:40.082Z",
+              "EditorCaption": ""
             }
           ]
         },

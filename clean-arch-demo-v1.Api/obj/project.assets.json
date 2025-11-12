@@ -13,6 +13,22 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "Microsoft.OpenApi/1.6.14": {
         "type": "package",
         "compile": {
@@ -88,6 +104,47 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "clean-arch-demo-v1.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "clean-arch-demo-v1.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/clean-arch-demo-v1.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/clean-arch-demo-v1.Application.dll": {}
+        }
+      },
+      "clean-arch-demo-v1.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/clean-arch-demo-v1.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/clean-arch-demo-v1.Core.dll": {}
+        }
+      },
+      "clean-arch-demo-v1.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "clean-arch-demo-v1.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/clean-arch-demo-v1.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/clean-arch-demo-v1.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -323,6 +380,38 @@
         "tools/netcoreapp2.1/System.Diagnostics.DiagnosticSource.dll"
       ]
     },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "sha512": "cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Microsoft.OpenApi/1.6.14": {
       "sha512": "tTaBT8qjk3xINfESyOPE2rIellPvB7qpVqiWiyA/lACVvz+xOGiXhFUfohcx82NLbi5avzLW0lx+s6oAqQijfw==",
       "type": "package",
@@ -439,11 +528,29 @@
         "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "clean-arch-demo-v1.Application/1.0.0": {
+      "type": "project",
+      "path": "../clean-arch-demo-v1.Application/clean-arch-demo-v1.Application.csproj",
+      "msbuildProject": "../clean-arch-demo-v1.Application/clean-arch-demo-v1.Application.csproj"
+    },
+    "clean-arch-demo-v1.Core/1.0.0": {
+      "type": "project",
+      "path": "../clean-arch-demo-v1.Core/clean-arch-demo-v1.Core.csproj",
+      "msbuildProject": "../clean-arch-demo-v1.Core/clean-arch-demo-v1.Core.csproj"
+    },
+    "clean-arch-demo-v1.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../clean-arch-demo-v1.Infrastructure/clean-arch-demo-v1.Infrastructure.csproj",
+      "msbuildProject": "../clean-arch-demo-v1.Infrastructure/clean-arch-demo-v1.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.0",
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "clean-arch-demo-v1.Application >= 1.0.0",
+      "clean-arch-demo-v1.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -479,7 +586,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Application\\clean-arch-demo-v1.Application.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Application\\clean-arch-demo-v1.Application.csproj"
+            },
+            "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Infrastructure\\clean-arch-demo-v1.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\Datalinks Internship Program\\Software Development\\Backend\\DotNET-C#\\clean-arch-demo-v1\\clean-arch-demo-v1.Infrastructure\\clean-arch-demo-v1.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -498,6 +612,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.6.2, )"
