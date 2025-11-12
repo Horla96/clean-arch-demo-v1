@@ -1,4 +1,6 @@
-﻿using clean_arch_demo_v1.Infrastructure.Data;
+﻿using clean_arch_demo_v1.Core.Interfaces;
+using clean_arch_demo_v1.Infrastructure.Data;
+using clean_arch_demo_v1.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -17,6 +19,9 @@ namespace clean_arch_demo_v1.Infrastructure
             {
                 options.UseSqlServer("Server=LBA-SULAIMAN;Database=EmployeeDb;Trusted_Connection=True;TrustServerCertificate=True");
             });
+
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
             return services;
         }
     }
