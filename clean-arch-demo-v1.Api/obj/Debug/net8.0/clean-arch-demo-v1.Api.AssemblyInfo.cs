@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("clean-arch-demo-v1.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d8b7ed99acf4729a605ddc726ee511387d4f978")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45a78c720b111f501732f7e74788bd4e21817dcb")]
 [assembly: System.Reflection.AssemblyProductAttribute("clean-arch-demo-v1.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("clean-arch-demo-v1.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

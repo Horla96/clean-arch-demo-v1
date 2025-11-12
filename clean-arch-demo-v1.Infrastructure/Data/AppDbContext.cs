@@ -1,0 +1,15 @@
+﻿using clean_arch_demo_v1.Core.Entities;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace clean_arch_demo_v1.Infrastructure.Data
+{
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+    {
+        public DbSet<EmployeeEntity> Employees { get; set; }
+    }
+}
