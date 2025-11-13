@@ -2,15 +2,19 @@
 using clean_arch_demo_v1.Core.Options;
 using clean_arch_demo_v1.Infrastructure.Data;
 using clean_arch_demo_v1.Infrastructure.Repositories;
+using clean_arch_demo_v1.Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
+using clean_arch_demo_v1.Core.Interfaces;
+using clean_arch_demo_v1.Core.Options;
+using clean_arch_demo_v1.Infrastructure.Data;
+using clean_arch_demo_v1.Infrastructure.Repositories;
+using clean_arch_demo_v1.Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using clean_arch_demo_v1.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace clean_arch_demo_v1.Infrastructure
 {
     public static class DependencyInjection
@@ -23,6 +27,18 @@ namespace clean_arch_demo_v1.Infrastructure
             });
 
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
+            services.AddScoped<IExternalVendorRepository, ExternalVendorRepository>();
+
+            services.AddHttpClient<ICoindeskHttpClientService, CoindeskHttpClientService>(option =>
+            {
+                option.BaseAddress = new Uri("https://api.coindesk.com/v1/");
+            });
+
+            services.AddHttpClient<IJokeHttpClientService, JokeHttpClientService>(option =>
+            {
+                option.BaseAddress = new Uri("https://official-joke-api.appspot.com/");
+            });
 
             return services;
         }
