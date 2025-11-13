@@ -1,22 +1,16 @@
 ﻿using clean_arch_demo_v1.Core.Entities;
 using clean_arch_demo_v1.Core.Interfaces;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace clean_arch_demo_v1.Application.Commands
+namespace clean_arch_demo_v1.Application.Commands;
+
+public record UpdateEmployeeCommand(Guid EmployeeId, EmployeeEntity Employee)
+ : IRequest<EmployeeEntity>;
+public class UpdateEmployeeCommandHandler(IEmployeeRepository employeeRepository)
+    : IRequestHandler<UpdateEmployeeCommand, EmployeeEntity>
 {
-    public record UpdateEmployeeCommand(Guid EmployeeId, EmployeeEntity Employee)
-     : IRequest<EmployeeEntity>;
-    public class UpdateEmployeeCommandHandler(IEmployeeRepository employeeRepository)
-        : IRequestHandler<UpdateEmployeeCommand, EmployeeEntity>
+    public async Task<EmployeeEntity> Handle(UpdateEmployeeCommand request, CancellationToken cancellationToken)
     {
-        public async Task<EmployeeEntity> Handle(UpdateEmployeeCommand request, CancellationToken cancellationToken)
-        {
-            return await employeeRepository.UpdateEmployeeAsync(request.EmployeeId, request.Employee);
-        }
+        return await employeeRepository.UpdateEmployeeAsync(request.EmployeeId, request.Employee);
     }
 }

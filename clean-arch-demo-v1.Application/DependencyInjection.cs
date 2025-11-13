@@ -1,19 +1,18 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR.NotificationPublishers;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace clean_arch_demo_v1.Application
+namespace clean_arch_demo_v1.Application;
+
+public static class DependencyInjection
 {
-    public static class DependencyInjection
+    public static IServiceCollection AddApplicationDI(this IServiceCollection services)
     {
-        public static IServiceCollection AddApplicationDI(this IServiceCollection services)
+        services.AddMediatR(cfg =>
         {
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly));
+            cfg.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
+            cfg.NotificationPublisher = new TaskWhenAllPublisher();
+        });
 
-            return services;
-        }
+        return services;
     }
 }
